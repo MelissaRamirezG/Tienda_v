@@ -1,6 +1,82 @@
-.fondo{
-    height: 75%;
+/* 
+    Created on : 26 ene 2023, 20:20:29
+    Author     : User
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Explora&family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+navbar{
+    width: 100%;
+    height: 15vh;
+    margin:auto;
+    align-items:center;
+    display: flex;
+}
+
+.Logo {
+    width: 160PX;
+    cursor: pointer;
+}
+
+nav{
+    padding-left: 60px;
+    display: inline-block;
+    position: relative;
+    left: 75%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#E68BFA;
+}
+
+.content p{
+    font-size: 20px;
+    color: #65098c;
+}
+
+content{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+fondo{
+    height: 50%;
     position: absolute;
     bottom: 50px;
-    right: 100px;
+    right: 160px;
 }

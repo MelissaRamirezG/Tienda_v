@@ -14,21 +14,21 @@
     width: 200px;
     height: 200px;
     box-sizing: border-box;
-    
+
 }
 
 .static{
     position: static;
     border: 3px solid green;
     top: 400px;
-    left: 500px; 
+    left: 500px;
 }
 
 .relative{
     position: relative;
     border: 3px solid green;
     top: 400px;
-    left: 500px; 
+    left: 500px;
     width: 400px;
     height: 400px;
 }
@@ -37,7 +37,7 @@
     position: relative;
     border: 3px solid green;
     top: 150px;
-    left: 50px; 
+    left: 50px;
     width: 100px;
     height: 100px;
 }
@@ -46,9 +46,22 @@
     position: absolute;
     border: 3px solid green;
     top: 80px;
-    left: 50px; 
+    left: 50px;
     width: 100px;
     height: 100px;
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    margin-bottom: 20px;
+    display: inline-block;
+
+}
+
+a{
+    display: block;
 }
 
 
