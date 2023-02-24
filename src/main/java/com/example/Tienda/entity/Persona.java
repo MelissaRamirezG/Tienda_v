@@ -18,7 +18,7 @@ import java.io.Serializable;
  * @author User
  */
 @Entity
-@Table(name = "persona")
+@Table(name = "personas")
 public class Persona implements Serializable {
 
     @Id
