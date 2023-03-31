@@ -3,19 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
+         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.2</version>
+        <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Tienda</name>
-    <description>Demo project for Spring Boot</description>
+    <groupId>com.tienda</groupId>
+    <artifactId>tienda</artifactId>
+    <version>1</version>
+    <name>tienda</name>
+    <description>Proyecto hehcho en clase de Web y´Patrones</description>
     <properties>
         <java.version>17</java.version>
     </properties>
+        
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,20 +39,22 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+                    
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>3.0.1</version>
-            <type>module</type>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>	 
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.25</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
 
