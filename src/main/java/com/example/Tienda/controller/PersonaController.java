@@ -34,14 +34,14 @@ public class PersonaController {
     public String index(Model model) {
         List<Persona> listaPersona = personaService.getAllPersona();
         model.addAttribute("titulo", "Tabla Persona");
-        model.addAttribute("persona", listaPersona);
-        return "persona";
+        model.addAttribute("personas", listaPersona);
+        return "personas";
     }
 
     @GetMapping("/personaN")
     public String crearPersona(Model model) {
         List<Pais> listaPaises = paisService.listCountry();
-        model.addAttribute("persona", new Persona());
+        model.addAttribute("personas", new Persona());
         model.addAttribute("paises", listaPaises);
         return "crear";
     }
@@ -62,7 +62,7 @@ public class PersonaController {
     public String editarPersona(@PathVariable("id") Long idPersona, Model model) {
         Persona persona = personaService.getPersonaById(idPersona);
         List<Pais> listaPaises = paisService.listCountry();
-        model.addAttribute("persona", persona);
+        model.addAttribute("personas", persona);
         model.addAttribute("paises", listaPaises);
         return "crear";
     }

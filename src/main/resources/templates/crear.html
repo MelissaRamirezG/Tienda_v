@@ -4,8 +4,9 @@
     <head th:replace="plantilla/template::head"></head>
     
     <body>
+        <header th:replace="plantilla/template::header"></header>
         <h1 th:text="#{cliente.titulo}"></h1>
-        <head th:replace="plantilla/template::header"></head>
+        
     </body>
         <div class="container">
             <div class="card-header bg-black text-white"> </div>
@@ -13,7 +14,7 @@
                 
                 <!-- Esto es un formulario -->
                 <div class="container">
-                    <form th:object =" ${persona}"
+                    <form th:object =" ${personas}"
                           th:action="@{/save}"
                           method="POST"><input type="hidden" th:field="*{id}">
                         <div class="form-group mb-3 row">
